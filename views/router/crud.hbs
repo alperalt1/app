@@ -1,0 +1,32 @@
+<h3>{{viewTitle}}</h3>
+<form action='/router' method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{route._id}}">
+    <div class="form-group">
+        <label>Store_ID</label>
+        <input type="text" class="form-control" name="Store_ID" placeholder="Store_ID" value="{{route.Store_ID}}">
+    </div>
+    <div class="form-group">
+        <label>Store_Area</label>
+        <input type="text" class="form-control" name="Store_Area" placeholder="Store_Area" value="{{route.Store_Area}}">
+    </div>
+    <div class="form-group">
+        <label>Items_Available</label>
+        <input type="text" class="form-control" name="Items_Available" placeholder="Items_Available" value="{{route.Items_Available}}">
+    </div>
+    <div class="form-group">
+        <label>Daily_Customer_Count</label>
+        <input type="text" class="form-control" name="Daily_Customer_Count" placeholder="Daily_Customer_Count" value="{{route.Daily_Customer_Count}}">
+    </div>
+    <div class="form-group">
+        <label>Store_Sales</label>
+        <input type="text" class="form-control" name="Store_Sales" placeholder="Store_Sales" value="{{route.Store_Sales}}">
+    </div>
+
+    
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info">Submit</button>
+        <a class="btn btn-secondary" href="/router/list">View</a>
+    </div>
+</form>
+
